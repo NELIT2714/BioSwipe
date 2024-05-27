@@ -1,0 +1,61 @@
+@import "node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    height: 100%;
+}
+
+#wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    flex: 1 1 auto;
+    width: 60rem;
+    margin: auto;
+    /*background-color: red;*/
+    padding: 2rem 0;
+}
+
+button {
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    background-color: white;
+    padding: 1rem;
+}
+
+.primary-btn {
+    background-color: #05B093;
+    border-radius: 5rem;
+    color: black;
+    padding: 0.7rem 20px;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+.primary-btn:hover {
+    transform: translateY(-10%);
+}
+
+.section > .title {
+    margin-bottom: 1rem;
+}
