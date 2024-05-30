@@ -39,9 +39,9 @@
 							</div>
 						</div>
 						<div class="btn-container">
-							<router-link :to="{ name: 'Questions', params: { id: theme._id } }">
+							<router-link :to="{ name: 'Theme', params: { id: theme._id } }">
 								<button class="primary-btn">
-								Przejdź do pytań
+									Przejdź do pytań
 								</button>
 							</router-link>
 						</div>

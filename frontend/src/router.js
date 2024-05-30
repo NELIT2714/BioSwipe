@@ -2,8 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Main from "@/views/MainPage.vue"
 import About from "@/views/AboutPage.vue"
-import QuestionsPage from "@/views/QuestionsPage.vue"
+import ThemePage from "@/views/ThemePage.vue"
 import AddTheme from "@/views/AddTheme.vue"
+import QuestionsPage from "@/views/QuestionsPage.vue"
 
 const routes = [
     {
@@ -17,7 +18,13 @@ const routes = [
         component: About
     },
     {
-        path: "/questions/:id",
+        path: "/theme/:id",
+        name: "Theme",
+        component: ThemePage,
+        props: true
+    },
+    {
+        path: "/theme/:id/questions",
         name: "Questions",
         component: QuestionsPage,
         props: true
